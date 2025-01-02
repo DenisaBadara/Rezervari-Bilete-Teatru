@@ -1,0 +1,61 @@
+/* src/Components/Spectacole/Spectacole.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../Assets/background1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Elimină flex pentru a permite conținutului să ocupe întregul spațiu */
+  min-height: 100vh;
+}
+
+.spectacole-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  width: 100%; /* Asigură că containerul ocupă întreaga lățime */
+  box-sizing: border-box;
+}
+
+.spectacole-container h2{
+  text-align: center;
+  font-size: 24px; /* Utilizează 'font-size' în loc de 'size' */
+  margin-bottom: 20px;
+}
+
+.spectacole-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundal negru transparent */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.spectacole-table th,
+.spectacole-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Margine albă transparentă */
+  padding: 12px; /* Crește padding-ul pentru mai mult spațiu */
+  text-align: center;
+  color: white;
+}
+
+.spectacole-table th {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundal negru mai opac pentru antet */
+  color: white;
+  font-weight: bold;
+}
+
+.spectacole-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Alb foarte transparent pentru rândurile pare */
+}
+
+.spectacole-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efect de hover */
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
